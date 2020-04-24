@@ -15,22 +15,6 @@ public class SelectActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select);
 
-        ImageButton backward_button = findViewById(R.id.button_backward);
-        ImageButton forward_button = findViewById(R.id.button_forward);
-
-        backward_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openHomeScreen();
-            }
-        });
-
-        forward_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openPlayScreen();
-            }
-        });
     }
 
     public void openHomeScreen(){
