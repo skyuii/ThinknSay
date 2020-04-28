@@ -7,25 +7,40 @@
     android:background="@drawable/gradient_bg"
     tools:context=".SelectActivity">
 
+<!--    <TextView-->
+<!--        android:id="@+id/textView3"-->
+<!--        android:layout_width="167dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="128dp"-->
+<!--        android:layout_marginTop="69dp"-->
+<!--        android:layout_marginEnd="116dp"-->
+<!--        android:layout_marginBottom="601dp"-->
+<!--        android:text="@string/select"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="45sp"-->
+<!--        tools:visibility="visible" />-->
+
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="167dp"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="49dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginBottom="621dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="117dp"
         android:text="@string/select"
-        android:textColor="#FFFFFF"
-        android:textSize="45sp" />
+        android:textSize="50sp"
+        android:textColor="#ffffff"/>
 
     <Spinner
         android:id="@+id/spinnerSelectPlayer"
-        android:layout_width="305dp"
+        android:layout_width="500dp"
         android:layout_height="52dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -33,7 +48,9 @@
         android:layout_marginStart="57dp"
         android:layout_marginTop="152dp"
         android:layout_marginEnd="48dp"
-        android:background="#FFFFFF"
+        android:textAlignment="center"
+        android:backgroundTint="#ffffff"
+        android:background="@drawable/button_rounded"
         android:entries="@array/Spinner_items" />
 
     <TextView

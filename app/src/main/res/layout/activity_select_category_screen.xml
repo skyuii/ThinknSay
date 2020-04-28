@@ -46,7 +46,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="16dp"
-                    app:layout_gravity="center">
+                    android:layout_gravity="center">
 
                     <ImageButton
                         android:id="@+id/butt_fruit"
@@ -83,7 +83,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="16dp"
-                    app:layout_gravity="center">
+                    android:layout_gravity="center">
 
                     <ImageButton
                         android:id="@+id/butt_veget"
@@ -120,7 +120,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="16dp"
-                    app:layout_gravity="center">
+                    android:layout_gravity="center">
 
                     <ImageButton
                         android:id="@+id/butt_fam"
@@ -157,7 +157,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="16dp"
-                    app:layout_gravity="center">
+                    android:layout_gravity="center">
 
                     <ImageButton
                         android:id="@+id/butt_body"
@@ -193,7 +193,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="16dp"
-                    app:layout_gravity="center">
+                    android:layout_gravity="center">
 
                     <ImageButton
                         android:id="@+id/butt_occupation"
@@ -229,7 +229,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="16dp"
-                    app:layout_gravity="center">
+                    android:layout_gravity="center">
 
                     <ImageButton
                         android:id="@+id/butt_place"
@@ -265,7 +265,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="16dp"
-                    app:layout_gravity="center">
+                    android:layout_gravity="center">
 
                     <ImageButton
                         android:id="@+id/butt_beverage"
@@ -301,7 +301,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="16dp"
-                    app:layout_gravity="center">
+                    android:layout_gravity="center">
 
                     <ImageButton
                         android:id="@+id/butt_festival"
@@ -337,7 +337,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="16dp"
-                    app:layout_gravity="center">
+                    android:layout_gravity="center">
 
                     <ImageButton
                         android:id="@+id/butt_color"
@@ -373,7 +373,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="16dp"
-                    app:layout_gravity="center">
+                    android:layout_gravity="center">
 
                     <ImageButton
                         android:id="@+id/butt_sport"
@@ -409,7 +409,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="16dp"
-                    app:layout_gravity="center">
+                    android:layout_gravity="center">
 
                     <ImageButton
                         android:id="@+id/butt_galaxy"
@@ -445,7 +445,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="16dp"
-                    app:layout_gravity="center">
+                    android:layout_gravity="center">
 
                     <ImageButton
                         android:id="@+id/butt_country"
@@ -481,7 +481,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="16dp"
-                    app:layout_gravity="center">
+                    android:layout_gravity="center">
 
                     <ImageButton
                         android:id="@+id/butt_country_asia"
@@ -517,7 +517,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="16dp"
-                    app:layout_gravity="center">
+                    android:layout_gravity="center">
 
                     <ImageButton
                         android:id="@+id/butt_country_europe"
