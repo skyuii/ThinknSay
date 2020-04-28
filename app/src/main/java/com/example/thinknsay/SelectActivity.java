@@ -14,27 +14,24 @@ import android.widget.Toast;
 
 public class SelectActivity extends AppCompatActivity {
 
-    private AdapterView adapterView;
-    Spinner spinnerSelect;
-    int currentItem = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select);
 
-        spinnerSelect = (Spinner)findViewById(R.id.spinnerSelectPlayer);
+        Spinner spinner = findViewById(R.id.spinnerSelectPlayer);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(
+                this,R.layout.custom_spinner,getResources().getStringArray(R.array.Spinner_items)
+        );
+        adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
+        spinner.setAdapter(adapter);
 
-        spinnerSelect.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-                if(currentItem == position){
-                    return;
-                }else{
-                    Intent intent = new Intent(SelectActivity.this, ScreenSelectMode.class);
-                    startActivity(intent);
-                }
+                Intent intent = new Intent(SelectActivity.this, ScreenSelectMode.class);
+                startActivity(intent);
             }
 
             @Override
