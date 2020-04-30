@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
 import android.view.Menu;
@@ -21,6 +22,9 @@ public class PlayScreen extends AppCompatActivity {
 
     TextView textView;
     private final int REQ_CODE = 100;
+    CountDownTimer countDownTimer;
+    TextView textTime;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +38,9 @@ public class PlayScreen extends AppCompatActivity {
                 pauseGame();
             }
         });
+
+        //countdown time
+        textTime = findViewById(R.id.timer);
 
         //Tap button to speak
         textView = findViewById(R.id.text);
@@ -53,8 +60,24 @@ public class PlayScreen extends AppCompatActivity {
                             "Sorry your device not supported",
                             Toast.LENGTH_SHORT).show();
                 }
+                countDownTimer.start();
             }
         });
+
+        //timer
+        countDownTimer = new CountDownTimer(15000,1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                //Toast.makeText(MainActivity.this,"START", Toast.LENGTH_LONG).show();
+                textTime.setText(millisUntilFinished/1000+ "s");
+            }
+
+            @Override
+            public void onFinish() {
+                textTime.setText("Time's Up");
+                //Toast.makeText(MainActivity.this, "Time's Up", Toast.LENGTH_SHORT).show();
+            }
+        };
 
 
     }

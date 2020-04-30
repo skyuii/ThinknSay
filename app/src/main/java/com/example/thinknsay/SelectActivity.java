@@ -20,7 +20,9 @@ public class SelectActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select);
 
+        ImageButton play_butt = findViewById(R.id.butt_play);
         Spinner spinner = findViewById(R.id.spinnerSelectPlayer);
+
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
                 this,R.layout.custom_spinner,getResources().getStringArray(R.array.Spinner_items)
         );
@@ -30,8 +32,7 @@ public class SelectActivity extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(SelectActivity.this, ScreenSelectMode.class);
-                startActivity(intent);
+
             }
 
             @Override
@@ -40,5 +41,16 @@ public class SelectActivity extends AppCompatActivity {
             }
         });
 
+        play_butt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openSelectScreen();
+            }
+        });
+
+    }
+    public void openSelectScreen(){
+        Intent intent = new Intent(this, ScreenSelectMode.class);
+        startActivity(intent);
     }
 }

@@ -11,7 +11,7 @@
         android:id="@+id/mode_view"
         android:layout_width="210dp"
         android:layout_height="66dp"
-        android:text="@android:string/selectTextMode"
+        android:text="@string/easy_mode"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,6 +20,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.034" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:text="Time"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/butt_pause"
@@ -39,13 +51,17 @@
         android:layout_width="192dp"
         android:layout_height="38dp"
         android:layout_marginTop="64dp"
-        android:background="#FFFFFF"
+        android:background="@drawable/gradient_bg"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mode_view"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="GeeGee"
+        android:textColor="#ffffff"
+        android:textAlignment="center"/>
 
     <ImageButton
         android:id="@+id/butt_mic"

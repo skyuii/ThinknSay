@@ -45,6 +45,7 @@
     <string name="start">START</string>
     <string name="todo">TODO</string>
     <string name="what_level_you_want_to_play">What level you want to play?</string>
+    <string name="easy_mode">Easy Mode</string>
 
 
 </resources>
